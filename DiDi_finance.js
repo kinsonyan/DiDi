@@ -15,11 +15,11 @@ Author：zZPiglet
 
 Quantumult X:
 [task_local]
-1 0 * * * https://raw.githubusercontent.com/kinsonyan/DiDi/DiDi_finance.js, tag=滴滴金融
+1 0 * * * https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi_finance.js, tag=滴滴金融
 
 Surge & Loon:
 [Script]
-cron "1 0 * * *" script-path=https://raw.githubusercontent.com/kinsonyan/DiDi/DiDi_finance.js
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi_finance.js
 */
 
 const $ = API("Didi");
@@ -32,7 +32,7 @@ $.detail = "";
 	$.token = $.read("#DiDi");
 	if (!$.token) {
 		throw new ERR.TokenError(
-			"❌ 未获取或填写 Token，请先参考以下链接获取 Token \n https://github.com/zZPiglet/Task/tree/master/DiDi "
+			"❌ 未获取或填写 Token，请先参考以下链接获取 Token \n https://github.com/kinsonyan/DiDi "
 		);
 	} else {
 		await getActId();
