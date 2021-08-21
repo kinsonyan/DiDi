@@ -30,18 +30,18 @@ Quantumult X (App Store:1.0.5+, TestFlight 190+):
 [task_local]
 1 0 * * * DiDi.js, tag=滴滴出行
 or remote
-1 0 * * * https://raw.githubusercontent.com/kinsonyan/DiDi/DiDi.js, tag=滴滴出行
+1 0 * * * https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi.js, tag=滴滴出行
 
 [rewrite_local]
 ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header DiDi.js
 or remote
-^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/kinsonyan/DiDi/DiDi.js
+^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi.js
 
 
 Surge 4.0+ & Loon:
 [Script]
-cron "1 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
-http-request ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? script-path=https://raw.githubusercontent.com/kinsonyan/DiDi/DiDi.js
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi.js
+http-request ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? script-path=https://raw.githubusercontent.com/kinsonyan/DiDi/main/DiDi.js
 
 All app:
 [mitm]
